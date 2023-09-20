@@ -17,7 +17,7 @@ const Card = ({render, handleSelected, selected, setSumbitted}) => {
       <div className="w-[330px] h-[366px] bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#222833] to-[#171E28] rounded-2xl">
         <div className="m-6 flex flex-col">
           <div className="p-3 mt-1 rounded-full bg-opacity-20 w-max bg-MediumGrey">
-            <Image alt="Scroll Icon" src={icon}></Image>
+            <Image alt="star icon" src={icon}></Image>
           </div>
           <h1 className=" mt-5 mb-3 text-2xl text-white font-bold">
             How did we do?
@@ -35,7 +35,7 @@ const Card = ({render, handleSelected, selected, setSumbitted}) => {
                   type="button"
                   value={rate}
                   key={i}
-                  className={` ${selected == rate ? 'bg-orange bg-opacity-100 text-white' : ''}  hover:bg-MediumGrey hover:text-white text-gray-400 text-sm bg-opacity-20 w-5 h-5 p-5 flex items-center mt-5 justify-center rounded-full bg-MediumGrey`}
+                  className={` ${selected == rate ? 'bg-orange text-white' : ''}  hover:bg-MediumGrey hover:text-white text-gray-400 text-sm w-5 h-5 p-5 flex items-center mt-5 justify-center rounded-full bg-TransparentGrey`}
                 >
                   {rate}
                 </button>
